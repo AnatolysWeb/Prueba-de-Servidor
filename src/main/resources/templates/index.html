@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Hola Mundo Spring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor ROBLEDO&&TONY</title>
     <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            color: #0073e6;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .status {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola Mundo desde Spring Boot!</h1>
-    <p>Funcionando correctamente ✅</p>
+    <div class="container">
+        <h1>¡Servidor en ejecución!</h1>
+        <p>Robledo.com_memela.com.ar </p>
+        <span class="status">✅ Activo</span>
+        
+        <form action="/registro" method="POST">
+            <p>registra tu vista de la pagina: </p>
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Registrar visita</button>
+        </form>
+    </div>
 </body>
 </html>
